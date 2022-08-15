@@ -203,9 +203,13 @@ body {
     background-color: #000000;
     color: #ffffff;
     border-radius: 4px;
-    /* padding: 8px; */
     border: none;
     border-color: #000000 !important;
-    /* width: 40px;
-    height: 40px; */
+}
+
+.ant-pagination-item-active {
+    background-color: #000000 !important;
+    color: white !important;
+    border-radius: 4px;
+    border: none;
 }
