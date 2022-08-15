@@ -20,9 +20,9 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
             <Row gutter={{ xs:8, sm: 8, md: 16, lg: 16 }}>
               <Col span={24} className="form-container">
                   <Row gutter={{ xs:8, sm: 8, md: 16, lg: 16 }} >
-                    <Col span={8} className="crypto-section" style={{width: '100%'}} xs={24} sm={24}>
+                    <Col span={8} className="crypto-section" style={{width: '100%'}} >
                       <Row gutter={{ xs:8, sm: 8, md: 16, lg: 16 }} className="crypto-column">
-                        <Col span={14} xs={24} sm={24}>
+                        <Col span={14} >
                           <span className="input-label">Currency from</span>
                           <div className="my-select-container">
                           <Select 
@@ -46,7 +46,7 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
                           </Select>
                           </div>
                         </Col>
-                        <Col span={10} xs={24} sm={24}> 
+                        <Col span={10} > 
                         <span className="input-label">Amount</span>
                             <Input 
                                 className='crypto-input' 
@@ -59,13 +59,13 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
                       </Row>
 
                     </Col>
-                    <Col span={1} className="equals-section" xs={24} sm={24}>
+                    <Col span={1} className="equals-section" >
                       <br/>
                       =
                     </Col>
-                    <Col span={15} className="fiat-section" style={{width: '100%'}} xs={24} sm={24}>
+                    <Col span={15} className="fiat-section" style={{width: '100%'}} >
                       <Row gutter={{ xs:8, sm: 8, md: 16, lg: 16 }}>
-                        <Col span={9}  xs={24} sm={24} >
+                        <Col span={9}   >
                           <span className="input-label">Currency to</span>
                           <div className="my-select-container">
                             <Select 
@@ -84,7 +84,7 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
                             </Select>
                           </div>
                         </Col>
-                        <Col span={9} xs={24} sm={24}>
+                        <Col span={9} >
                           <span className="input-label">Amount</span>
                           <Input 
                             className='fiat-input'
@@ -96,7 +96,7 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
                              
                              />
                         </Col>
-                        <Col span={6} xs={24} sm={24}>
+                        <Col span={6} >
                           <br/>
                           <Button 
                             className='save-button' 

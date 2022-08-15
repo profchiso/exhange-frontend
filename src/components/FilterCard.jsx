@@ -12,9 +12,9 @@ function FilterCard({onFromDateChange,onToDateChange,onTypeChange, refetch}) {
                <Col span={24} >History</Col>
             </Row>
             <Row gutter={{ xs:8, sm: 8, md: 8, lg: 8 }}>
-              <Col span={14} className="form-container" xs={24} sm={24} >
+              <Col span={14} className="form-container"  >
                 <Row gutter={{ xs:8, sm: 8, md: 16, lg: 16 }}>
-                  <Col span={6} xs={24} sm={24}>
+                  <Col span={6} >
                     <span className="input-label">From date</span> 
                     <div className="my-select-container">
                       <DatePicker 
@@ -28,7 +28,7 @@ function FilterCard({onFromDateChange,onToDateChange,onTypeChange, refetch}) {
                          />
                     </div>
                   </Col>
-                  <Col span={6} xs={24} sm={24}>
+                  <Col span={6} >
                     <span className="input-label">To date</span> 
                       <div className="my-select-container">
                       <DatePicker 
@@ -42,7 +42,7 @@ function FilterCard({onFromDateChange,onToDateChange,onTypeChange, refetch}) {
                         />
                     </div>
                   </Col>
-                  <Col span={6} xs={24} sm={24}>
+                  <Col span={6} >
                     <span className="input-label">Type</span>
                      <div className="my-select-container">
                             <Select 
@@ -58,7 +58,7 @@ function FilterCard({onFromDateChange,onToDateChange,onTypeChange, refetch}) {
                             </Select>
                           </div>
                   </Col>
-                  <Col span={6} xs={24} sm={24}>
+                  <Col span={6} >
                     <br/>
                     <Button 
                         className='filter-button' 
