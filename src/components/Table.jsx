@@ -20,7 +20,7 @@ const columns = [
     dataIndex: 'currencyFrom',
   },
   {
-    title: 'Amount1',
+    title: 'Amount 1',
     dataIndex: 'amount1',
   },
    {
@@ -28,7 +28,7 @@ const columns = [
     dataIndex: 'currencyTo',
   },
    {
-    title: 'Amount2',
+    title: 'Amount 2',
     dataIndex: 'amount2',
     render(text,record){
       return{
