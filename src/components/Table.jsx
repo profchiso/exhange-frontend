@@ -120,11 +120,9 @@ const TableCard=({tableData}) =>{
                       if (type === 'prev') {
                         return <ArrowLeftOutlined />;
                       } if (type === 'next') {
-                        return <span style={{lineHeight:"24px",color:"#565D5F",display:"flex", alignItems: "center",fontWeight:400,paddingRight:"8px"}}>Next <ArrowRightOutlined /></span>;
+                        return <span style={{lineHeight:"24px",color:"#565D5F",display:"flex", alignItems: "center",fontWeight:400,paddingRight:"8px"}}>Next <ArrowRightOutlined style={{paddingLeft:"8px"}} /></span>;
                       }
                       return originalElement;
-                    
-
                      }
                     
                     }}
