@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    background-color: #F4F0EC;
 }
 
-.App-link {
-  color: #61dafb;
+.layout {
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.site-page-header {
+    /* height: 234px; */
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
+    padding-top: 1.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1.5%;
+}
+
+.page-header-title {
+    /* width: 112px; */
+    height: 37px;
+    left: 222px;
+    top: 60px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 152.2%;
+    /* identical to box height, or 37px */
+    color: #000000;
+}
+
+.form-container {
+    padding-top: 1.5%;
+}
+
+.crypto-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    padding: 0px;
+    gap: 16px;
+}
+
+.fiat-section {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 0px;
+    gap: 16px;
+}
+
+.save-button {
+    background-color: #49CD5E;
+    color: #ffffff;
+    border-radius: 8px;
+    Padding: 12px, 24px, 12px, 24px;
+    Width: 100%;
+    Height: 40px
+}
+
+.filter-button {
+    border-radius: 8px;
+    Padding: 12px, 24px, 12px, 24px;
+    Width: 100%;
+    Height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+    width: 78px;
+    height: 40px;
+    /* Primary/Primary */
+    border: 1px solid #1B31A8;
+    border-radius: 8px;
+}
+
+.filter-button:hover {
+    background-color: #6581A3;
+    border: 0px;
+    color: whitesmoke;
+}
+
+.save-button:hover {
+    background-color: #222cc7;
+    color: whitesmoke;
+}
+
+.coin-selector,
+.fiat-selector {
+    width: 100%;
+    height: 42px;
+    border-radius: 20px !important;
+    border-color: #E0E0E0;
+    border-color: #E0E0E0 !important;
+}
+
+.crypto-input,
+.fiat-input {
+    /* Forms */
+    width: 100%;
+    height: 42px;
+    border-radius: 8px !important;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-color: #E0E0E0 !important;
+}
+
+.input-label {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 152.2%;
+    /* or 21px */
+    /* Neutral 3 (muted) */
+    color: #9C9C9C;
+}
+
+.coin-icon {
+    margin: 4px 8px;
+}
+
+.currency-name {
+    top: calc(50% - 21px/2 + 13px);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 152.2%;
+    /* or 21px */
+    /* Primary */
+    color: #000000;
+}
+
+.my-select-container .ant-select .ant-select-selector {
+    border-radius: 8px;
+}
+
+.filter-header {
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    background: #FFFFFF;
+    /* background-color: #F4F0EC; */
+}
+
+.feedback-header {
+    margin-top: 0.2%;
+    padding-top: 0.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    background: #F4F0EC;
+}
+
+.feedback-message {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #49CD5E;
+}
+
+.feedback-content {
+    padding: 8px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.table-header {
+    padding-top: 0.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2.5%;
+    background: #FFFFFF;
+}
+
+.table-row-light {
+    background-color: #ffffff;
+}
+
+.table-row-dark {
+    background-color: #EEEEEE;
+}
+
+.ant-pagination-item-active a {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    /* padding: 8px; */
+    border: none;
+    border-color: #000000 !important;
+    /* width: 40px;
+    height: 40px; */
 }
