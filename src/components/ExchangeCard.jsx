@@ -46,7 +46,7 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
                           </Select>
                           </div>
                         </Col>
-                        <Col span={10} > 
+                        <Col span={10} style={{width: '100%',}} > 
                         <span className="input-label">Amount</span>
                             <Input 
                                 className='crypto-input' 
@@ -59,7 +59,7 @@ const ExchangeCard = ({amount1,amount2,handleAmount1Change,handleAmount2Change,h
                       </Row>
 
                     </Col>
-                    <Col span={1} className="equals-section" >
+                    <Col  className="equals-section" >
                       <br/>
                       =
                     </Col>

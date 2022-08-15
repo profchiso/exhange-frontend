@@ -6,6 +6,7 @@ const columns = [
   {
     title: 'Date & Time',
     dataIndex: 'createdAt',
+    key: 'createdAt',
     sorter: (a, b) => a.createdAt - b.createdAt,
     sortDirections: ["descend", "ascend"],
     responsive: ["sm"],
@@ -21,6 +22,7 @@ const columns = [
   {
     title: 'Currency From',
     dataIndex: 'currencyFrom',
+    key: 'currencyFrom',
     sorter: (a, b) => a.currencyFrom - b.currencyFrom,
     sortDirections: ["descend", "ascend"],
     responsive: ["sm"],
@@ -28,6 +30,7 @@ const columns = [
   {
     title: 'Amount 1',
     dataIndex: 'amount1',
+    key: 'amount1',
     sorter: (a, b) => a.amount1 - b.amount1,
     sortDirections: ["descend", "ascend"],
     responsive: ["sm"],
@@ -35,6 +38,7 @@ const columns = [
    {
     title: 'Currency To',
     dataIndex: 'currencyTo',
+    key: 'currencyTo',
     sorter: (a, b) => a.currencyTo - b.currencyTo,
     sortDirections: ["descend", "ascend"],
     responsive: ["sm"],
@@ -42,6 +46,7 @@ const columns = [
    {
     title: 'Amount 2',
     dataIndex: 'amount2',
+    key: 'amount2',
     sorter: (a, b) => a.amount2 - b.amount2,
     sortDirections: ["descend", "ascend"],
     responsive: ["sm"],
@@ -57,6 +62,7 @@ const columns = [
   {
     title: 'Type',
     dataIndex: 'type',
+    key: 'type',
     sorter: (a, b) => a.type - b.type,
     sortDirections: ["descend", "ascend"],
     responsive: ["sm"],
