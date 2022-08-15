@@ -1,6 +1,10 @@
 import React,{useState} from 'react'
 import moment from 'moment';
 import { PageHeader,Row,Col,Table,Statistic} from 'antd';
+import {
+  ArrowRightOutlined,
+  ArrowLeftOutlined
+} from '@ant-design/icons';
 
 const columns = [
   {
@@ -78,7 +82,7 @@ const columns = [
 ];
 
 // const rowSelection = {
-//   onChange: (selectedRowKeys, selectedRows) => {
+//   onclick: (selectedRowKeys, selectedRows) => {
 //     console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
 //   },
 //    props:{
@@ -107,12 +111,37 @@ const TableCard=({tableData}) =>{
                   columns={columns} 
                   dataSource={tableData} 
                   size="small"  
-                  pagination={{current:current,pageSize:4,position:["bottomLeft"], total:tableData.length, }}
+                  pagination={{
+                    current:current,
+                    pageSize:4,
+                    position:["bottomLeft"],
+                     total:tableData.length, 
+                     itemRender(current, type, originalElement) {
+                      if (type === 'prev') {
+                        return <ArrowLeftOutlined />;
+                      } if (type === 'next') {
+                        return <span style={{lineHeight:"24px",color:"#565D5F",display:"flex", alignItems: "center",fontWeight:400,paddingRight:"8px"}}>Next <ArrowRightOutlined /></span>;
+                      }
+                      return originalElement;
+                    
+
+                     }
+                    
+                    }}
                   defaultPageSize={4} 
                   sortDirections={["decend"]} 
                   rowClassName={(record, index) => index % 2 === 0 ? 'table-row-light' :  'table-row-dark'}
                    onChange={onChange}
-                  //  rowSelection={ rowSelection }
+                  onRow={(record) => {
+                    return {
+                      onClick: event => {
+                        
+                        console.log(event.target)
+                        //event.target.classlist.add("table-row-click-style") 
+                      }, 
+                    };
+                  }}
+                 
                   />
                   
                </Col>
